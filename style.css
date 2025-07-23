@@ -2,3 +2,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-size: 1em;
+}
+
+:root{
+    --tom1-cor: #d7f093;
+    --main-cor: #a6ce3a;
+    --tom2-cor: #83b302;
+    --tom3-cor: #7ba302;
+    --tom4-cor: #bbf0355b;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Serif', 'Arial Serif', serif;
+}
+
+header {
+    background-color: var(--main-cor);
+    padding: 40px 40px 0px 40px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font: 600 3em 'Roboto Serif', 'Arial Serif', serif;
+}
+
+header nav {
+    margin-top: 60px;
+    padding: 10px 0px 10px 0px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.40em;
+    margin: 0px 15px 0px 15px;
+}
