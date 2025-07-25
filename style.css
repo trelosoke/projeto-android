@@ -2,46 +2,198 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+
 @font-face {
     font-family: idroid;
     src: url(fontes/idroid.otf) format(opentype);
-    font-weight: normal;
     font-size: 1em;
+    font-weight: normal;
 }
 
-:root{
+:root {
     --tom1-cor: #d7f093;
     --main-cor: #a6ce3a;
     --tom2-cor: #83b302;
-    --tom3-cor: #7ba302;
-    --tom4-cor: #bbf0355b;
+    --headers-cor: #7ba302;
+    --hBG-cor: #b6f31b7e;
+    --dark-cor: #597505;
+    --darker-cor: #415800;
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto Serif', 'Arial Serif', serif;
 }
 
+body {
+    background-color: var(--tom1-cor);
+}
+
+/*header*/
 header {
     background-color: var(--main-cor);
-    padding: 40px 40px 0px 40px;
+    padding: 40px;
 }
 
 header h1 {
     text-align: center;
-    color: white;
-    font: 600 3em 'Roboto Serif', 'Arial Serif', serif;
+    font-size: 2.5em;
+    color: #ffffff;
 }
 
-header nav {
-    margin-top: 60px;
-    padding: 10px 0px 10px 0px;
+header p {
+    text-align: center;
+    margin: 16px;
+    color: #ffffff;
 }
 
-header nav a {
+nav {
+    background-color: var(--main-cor);
+    padding: 8px 0px 8px 0px;
+
+    
+}
+
+nav a {
     text-decoration: none;
-    color: white;
-    font-size: 1.40em;
-    margin: 0px 15px 0px 15px;
+    color: #ffffff;
+    font-size: 1.1em;
+
+    padding: 8px 16px 8px 16px;
+
+    transition-duration: 0.2s;
+}
+
+nav a:hover {
+    background-color: var(--tom1-cor);
+    padding: 8px 20px 8px 20px;
+    color: var(--dark-cor);
+}
+
+/*main*/
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 340px;
+    margin: auto;
+    border-radius: 0px 0px 12px 12px;
+    padding-bottom: 1px;
+}
+
+main strong {
+    color: var(--darker-cor);
+}
+
+main a {
+    background-color: var(--hBG-cor);
+    color: var(--dark-cor);
+}
+
+main a.external::after {
+    content: '\01F517';
+}
+
+
+main h1 {
+    font: normal 2.2em idroid, Arial, sans-serif;
+    color: var(--headers-cor);
+
+    margin: 0px 18px 0px 18px;
+}
+
+main h2 {
+    display: inline-block;
+    font: normal 1.9em idroid, Arial, sans-serif;
+    color: var(--headers-cor);
+    background-color: var(--hBG-cor);
+
+    margin: 0px 18px 0px 18px;
+    padding: 2px 10px 2px 10px;
+    border-radius: 6px; 
+}
+
+main p {
+    text-indent: 4em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+
+    margin: 18px;
+}
+
+main img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+main img.small {
+    max-width: 350px;
+    min-width: 200px;
+}
+
+div.video {
+    background-color: var(--dark-cor);
+    padding: 20px;
+    padding-bottom: 54.2%;
+
+    position: relative;
+}
+
+div.video > iframe {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+    position: absolute;
+}
+
+aside {
+    background-color: var(--main-cor);
+    margin: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside h3 {
+    background-color: var(--dark-cor);
+    color: #ffffff;
+
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside p {
+    font-size: 1em;
+    margin: 6px;
+}
+
+aside section.sideList {
+    background-color: var(--tom1-cor);
+    padding: 1px;
+    border-radius: 8px;
+
+}
+
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+
+    margin: 18px 6px 18px 6px;
+}
+
+/*footer*/
+footer {
+    background-color: var(--dark-cor);
+}
+
+footer p{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 24px;
+    padding: 2px;
 }
