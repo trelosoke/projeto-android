@@ -35,11 +35,6 @@ header {
     background-color: var(--main-cor);
     padding: 36px 0px 18px 0px;
     height: 100px; /*170px*/
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
 }
 
 header h1 {
@@ -57,11 +52,6 @@ header p {
 nav {
     background-color: var(--main-cor);
     padding: 8px 0px 8px 0px;
-
-    width: 100%;
-    position: sticky;
-    top: 154px;
-    z-index: 1000;
 }
 
 nav a {
